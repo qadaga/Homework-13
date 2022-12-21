@@ -1,8 +1,14 @@
-let letters = ['h' , 'H' , 'P', 'p']
+const uppercaseChars = [];
+const lowerCaseChars = [];
 
-let lower = ""
+const arr = ['h' , 'H' , 'P', 'p'];
 
-let upper = ""
+for(let i in arr) {
+  if(arr[i].toLocaleLowerCase() === arr[i]) {
+    lowerCaseChars.push(arr[i]);
+  }else {
+    uppercaseChars.push(arr[i])
+  }
+}
 
-// რაღაც ვერ გავიგე :D :D :D 
-console.log(letters)
+console.log(uppercaseChars, lowerCaseChars)
